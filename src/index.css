@@ -467,3 +467,53 @@ input[type="range"]::-webkit-slider-thumb {
   border-color: rgba(0, 255, 255, 0.4);
   background: rgba(0, 255, 255, 0.05);
 }
+
+/* Editor preview animations */
+@keyframes parallax-preview {
+  from {
+    transform: scale(1.1) translateX(-5%);
+  }
+  to {
+    transform: scale(1.1) translateX(5%);
+  }
+}
+@keyframes tilt-preview {
+  from {
+    transform: perspective(600px) rotateY(-8deg) rotateX(3deg);
+  }
+  to {
+    transform: perspective(600px) rotateY(8deg) rotateX(-3deg);
+  }
+}
+@keyframes zoom-preview {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.15);
+  }
+}
+@keyframes zoom-out-preview {
+  from {
+    transform: scale(1.15);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes sway-preview {
+  from {
+    transform: rotate(-3deg) scale(1.05);
+  }
+  to {
+    transform: rotate(3deg) scale(1.05);
+  }
+}
+@keyframes float-preview {
+  from {
+    transform: translateY(-8px) scale(1.03);
+  }
+  to {
+    transform: translateY(8px) scale(1.03);
+  }
+}
